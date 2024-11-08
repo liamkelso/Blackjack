@@ -93,6 +93,7 @@ public class Table {
 
             // Dealer's turn
             System.out.println("Dealer's turn:");
+            System.out.println("Dealer's current hand: " + dealer.getHand());
             while (dealer.getTotal() < 17) {
                 int newCard = deck.drawCard();
                 dealer.addCard(newCard);
